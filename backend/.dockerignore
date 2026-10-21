@@ -1,0 +1,13 @@
+# ============================================================
+# .dockerignore  –  Backend  –  Practical 11
+# ============================================================
+# Files listed here are excluded from the Docker build context.
+# This prevents node_modules (hundreds of MB) from being sent
+# to the Docker daemon, drastically speeding up builds.
+# It also prevents .env (secrets) from being baked into the image.
+
+node_modules
+.env
+*.log
+.git
+.gitignore
